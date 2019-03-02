@@ -1,0 +1,42 @@
+{
+  "name": "meg-server-setup",
+  "version": "0.1.0",
+  "description": "MongoDB/Express/GraphQL Boilerplate Setup",
+  "engines": {
+    "npm": ">=6.4.1",
+    "node": ">=8.14.0"
+  },
+  "keywords": [
+    "mongodb",
+    "mongoose",
+    "express",
+    "graphql",
+    "apollo",
+    "apollo-server",
+    "boilerplate",
+    "starter-kit"
+  ],
+  "author": "Aakash Goel <se.aakashgoel@hotmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aakash-Goel/meg-server-setup.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Aakash-Goel/meg-server-setup/issues"
+  },
+  "homepage": "https://github.com/Aakash-Goel/meg-server-setup#readme",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "apollo-server": "^2.4.8",
+    "apollo-server-express": "^2.4.8",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "graphql": "^14.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
