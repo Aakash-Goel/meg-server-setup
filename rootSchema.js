@@ -63,7 +63,7 @@ const rootSchema = [
   linkSchema, // do not remove this schema
   messageSchema,
   r1Schema, // *** test schema delete this
-  r2Schema // *** test schema delete this
+  r2Schema, // *** test schema delete this
 ];
 // console.log('>>>rootSchema ', rootSchema );
 

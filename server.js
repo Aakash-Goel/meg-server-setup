@@ -40,7 +40,7 @@ app.use(cors());
  */
 const server = new ApolloServer({
   typeDefs: rootSchema,
-  resolvers: rootResolver
+  resolvers: rootResolver,
 });
 
 server.applyMiddleware({ app, path: `${graphQlPath}` });
@@ -52,4 +52,3 @@ server.applyMiddleware({ app, path: `${graphQlPath}` });
 app.listen({ port: 4000 }, () =>
   console.log(`🚀 Server ready at http://localhost:4000${graphQlPath}`)
 );
-

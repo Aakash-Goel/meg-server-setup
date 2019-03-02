@@ -27,16 +27,16 @@ const { messageResolvers } = require('./src/message');
 // *** this is a test resolver. Do not create any resolver here. Delete below resolver
 const r1 = {
   Query: {
-     field1: () => {}
-   }
- }
+    field1: () => {},
+  },
+};
 
 // *** this is a test resolver. Do not create any resolver here. Delete below resolver
- const r2 = {
+const r2 = {
   Query: {
-     field2: () => {}
-   }
- }
+    field2: () => {},
+  },
+};
 
 /**
  * Add or Remove resolvers.
@@ -46,7 +46,7 @@ const r1 = {
 const rootResolver = [
   messageResolvers,
   r1, // *** test resolver delete this
-  r2 // *** test resolver delete this
+  r2, // *** test resolver delete this
 ];
 // console.log('>>>rootResolver ', rootResolver );
 
