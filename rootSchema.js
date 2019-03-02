@@ -1,20 +1,29 @@
 /**
  * rootSchema.js
+ * Copyright (c) 2019-present, Aakash Goel
+ * MIT Licensed
  *
  * This is the main file where all the schemas will be imported and combined into one schema i.e. rootSchema which will then export
  *
- * Create new resolver inside 'src' folder, import it here and add it to the rootSchema object.
+ * Create new schema inside 'src' folder, import it here and add it to the rootSchema object.
  *
  * For ex:
  *  1. create new folder inside 'src' i.e. 'featureXyz'
  *  2. create new file i.e. 'schema.js' inside 'src > featureXyz'. Create schemas related to this feature only and export it.
- *  3. create new file i.e. 'index.js' inside 'src > featureXyz'. Import and Export `featureXyzSchema` here.
+ *  3. create new file i.e. 'index.js' inside 'src > featureXyz'. Import and Export `featureXyzSchema` in this index file.
  *  4. Import here in 'rootSchema.js' i.e. const { featureXyzSchema } = require('./src/featureXyz')
  *  5. Add it to the `rootSchema` i.e. const rootSchema = [<otherSchema>, featureXyzSchema]
  *
  */
+
+'use strict';
+
 const { gql } = require('apollo-server-express');
 
+/**
+ * Module schemas.
+ *
+ */
 const { messageSchema } = require('./src/message');
 
 // *** this is a test schema. Do not create any schema here. Delete below schema
@@ -31,8 +40,11 @@ const r2Schema = gql`
   }
 `;
 
-// Add type which is needed to be extend on other schema
-//  more info here https://www.apollographql.com/docs/graphql-tools/generate-schema.html#extend-types
+/**
+ * Add type which is needed to be extend on other schema
+ * more info here https://www.apollographql.com/docs/graphql-tools/generate-schema.html#extend-types
+ *
+ */
 const linkSchema = gql`
   type Query {
     _: Boolean
@@ -42,7 +54,11 @@ const linkSchema = gql`
   }
 `;
 
-// Add new schema in an array
+/**
+ * Add or Remove schemas.
+ * @public
+ *
+ */
 const rootSchema = [
   linkSchema, // do not remove this schema
   messageSchema,
@@ -50,4 +66,10 @@ const rootSchema = [
   r2Schema // *** test schema delete this
 ];
 // console.log('>>>rootSchema ', rootSchema );
+
+/**
+ * Module exports.
+ * @public
+ *
+ */
 module.exports = rootSchema;
