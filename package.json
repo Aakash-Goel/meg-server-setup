@@ -34,7 +34,6 @@
     "lint:eslint": "eslint --ext .js --ignore-path .eslintignore",
     "lint:check": "eslint --print-config .eslintrc | eslint-config-prettier-check",
     "lint:js:fix": "npm run lint:eslint -- . --fix",
-    "precommit": "lint-staged",
     "preformat": "npm run lint:check"
   },
   "dependencies": {
