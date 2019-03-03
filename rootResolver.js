@@ -46,7 +46,7 @@ const rootResolver = [
   r1, // *** test resolver delete this
   r2, // *** test resolver delete this
 ];
-// console.log('>>>rootResolver ', rootResolver );
+// console.log('>>>rootResolver ', rootResolver);
 
 /**
  * Module exports.

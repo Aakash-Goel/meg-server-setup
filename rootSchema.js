@@ -62,7 +62,7 @@ const rootSchema = [
   r1Schema, // *** test schema delete this
   r2Schema, // *** test schema delete this
 ];
-// console.log('>>>rootSchema ', rootSchema );
+// console.log('>>>rootSchema ', rootSchema);
 
 /**
  * Module exports.

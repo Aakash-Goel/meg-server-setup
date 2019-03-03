@@ -38,6 +38,7 @@
     "mongoose": "^5.4.16"
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.1",
     "eslint": "^5.15.0",
     "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-import": "^2.16.0",

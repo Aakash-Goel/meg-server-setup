@@ -1,8 +1,21 @@
 const { gql } = require('apollo-server-express');
 
 const schema = gql`
+  type Message {
+    _id: ID!
+    title: String!
+  }
+
+  input MessageInput {
+    title: String!
+  }
+
   extend type Query {
-    hello: String
+    messages: [Message!]!
+  }
+
+  extend type Mutation {
+    createMessage(messageInput: MessageInput): Message
   }
 `;
 
