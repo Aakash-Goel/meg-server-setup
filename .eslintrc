@@ -12,6 +12,7 @@
     "import"
   ],
   "rules": {
+    "no-unused-vars": "error",
     "import/no-extraneous-dependencies": 0,
     "import/no-unresolved": [2, {"commonjs": true, "amd": true}],
     "prettier/prettier": 2

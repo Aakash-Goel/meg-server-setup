@@ -20,7 +20,6 @@
 
 /**
  * Module resolvers.
- *
  */
 const { messageResolvers } = require('./src/message');
 
@@ -41,7 +40,6 @@ const r2 = {
 /**
  * Add or Remove resolvers.
  * @public
- *
  */
 const rootResolver = [
   messageResolvers,
@@ -53,6 +51,5 @@ const rootResolver = [
 /**
  * Module exports.
  * @public
- *
  */
 module.exports = rootResolver;

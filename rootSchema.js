@@ -22,7 +22,6 @@ const { gql } = require('apollo-server-express');
 
 /**
  * Module schemas.
- *
  */
 const { messageSchema } = require('./src/message');
 
@@ -43,7 +42,6 @@ const r2Schema = gql`
 /**
  * Add type which is needed to be extend on other schema
  * more info here https://www.apollographql.com/docs/graphql-tools/generate-schema.html#extend-types
- *
  */
 const linkSchema = gql`
   type Query {
@@ -57,7 +55,6 @@ const linkSchema = gql`
 /**
  * Add or Remove schemas.
  * @public
- *
  */
 const rootSchema = [
   linkSchema, // do not remove this schema
@@ -70,6 +67,5 @@ const rootSchema = [
 /**
  * Module exports.
  * @public
- *
  */
 module.exports = rootSchema;
