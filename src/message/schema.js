@@ -1,5 +1,23 @@
+/**
+ * schema.js
+ * Copyright (c) 2019-present, Aakash Goel
+ * MIT Licensed
+ *
+ * This is where Message graphQL schema is defined
+ *
+ */
+
+'use strict';
+
+/**
+ * Module dependencies.
+ */
 const { gql } = require('apollo-server-express');
 
+/**
+ * Define graphQL schema
+ * @public
+ */
 const schema = gql`
   type Message {
     _id: ID!
@@ -19,4 +37,8 @@ const schema = gql`
   }
 `;
 
+/**
+ * Export graphQL schema
+ * @public
+ */
 module.exports = schema;

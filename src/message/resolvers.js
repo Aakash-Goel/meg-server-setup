@@ -1,5 +1,23 @@
+/**
+ * resolvers.js
+ * Copyright (c) 2019-present, Aakash Goel
+ * MIT Licensed
+ *
+ * This is where all Message graphQL resolvers are defined
+ *
+ */
+
+'use strict';
+
+/**
+ * Module dependencies.
+ */
 const Message = require('./model');
 
+/**
+ * Define graphQL resolvers
+ * @public
+ */
 const resolvers = {
   Query: {
     messages: async () => {
@@ -28,4 +46,8 @@ const resolvers = {
   },
 };
 
+/**
+ * Export graphQL resolvers
+ * @public
+ */
 module.exports = resolvers;

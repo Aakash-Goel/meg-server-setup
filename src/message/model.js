@@ -1,7 +1,21 @@
+/**
+ * model.js
+ * Copyright (c) 2019-present, Aakash Goel
+ * MIT Licensed
+ *
+ * This is where mongoDB Message model is defined
+ *
+ */
+
+'use strict';
+
+/**
+ * Module dependencies.
+ */
 const mongoose = require('mongoose');
 
 /**
- * Define mongoose schema
+ * Define mongoDB schema
  * @private
  */
 const Schema = mongoose.Schema;
@@ -17,7 +31,7 @@ const messageSchema = new Schema({
 });
 
 /**
- * Define model
+ * Export mongoDB model
  * @public
  */
 module.exports = mongoose.model('Message', messageSchema);
