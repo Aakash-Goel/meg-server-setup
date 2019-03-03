@@ -1,0 +1,7 @@
+{
+  "*.{js}": [
+    "eslint",
+    "format",
+    "git add"
+  ]
+}
