@@ -18,7 +18,7 @@ const mongoose = require('mongoose');
  * Define mongoDB schema
  * @private
  */
-const Schema = mongoose.Schema;
+const { Schema } = mongoose;
 
 /**
  * Generate new message Schema

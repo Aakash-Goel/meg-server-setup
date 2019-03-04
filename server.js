@@ -17,6 +17,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const { ApolloServer } = require('apollo-server-express');
 
+const logger = require('./logger');
 const rootSchema = require('./rootSchema');
 const rootResolver = require('./rootResolver');
 
@@ -26,6 +27,10 @@ const rootResolver = require('./rootResolver');
  */
 const app = express();
 const graphQlPath = '/graphql';
+const customHost = process.env.HOST;
+const host = customHost || null;
+const prettyHost = customHost || 'localhost';
+const port = parseInt(process.env.PORT, 10) || 4000;
 
 /**
  * Added cors to express middleware
@@ -54,10 +59,15 @@ mongoose
   )
   .then(() => {
     // Start up the server and listening to port
-    app.listen({ port: 4000 }, () =>
-      console.log(`🚀 Server ready at http://localhost:4000${graphQlPath}`)
-    );
+    app.listen(port, host, err => {
+      if (err) {
+        return logger.error(err.message);
+      }
+
+      return logger.appStarted(port, prettyHost, graphQlPath);
+    });
   })
   .catch(err => {
-    console.log(err);
+    logger.error(err.stack);
+    process.exit(1);
   });

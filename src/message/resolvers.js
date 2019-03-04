@@ -24,7 +24,7 @@ const resolvers = {
       try {
         const mszs = await Message.find();
         return mszs.map(msz => {
-          return { ...msz._doc };
+          return { ...msz._doc }; // eslint-disable-line no-underscore-dangle
         });
       } catch (err) {
         throw err;
@@ -38,7 +38,7 @@ const resolvers = {
           title: args.messageInput.title,
         });
         const result = await msz.save();
-        return { ...result._doc };
+        return { ...result._doc }; // eslint-disable-line no-underscore-dangle
       } catch (error) {
         throw error;
       }
