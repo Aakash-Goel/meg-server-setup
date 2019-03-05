@@ -179,4 +179,4 @@ This is a server setup independent of front end tech stack. We use some of the m
 ## 4. Licensing
 ![Licensing](https://raw.githubusercontent.com/elsewhencode/project-guidelines/master/images/licensing.png)
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/Aakash-Goel/meg-server-setup/blob/master/LICENSE) file for details
