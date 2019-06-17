@@ -1,7 +1,5 @@
 /**
  * schema.js
- * Copyright (c) 2019-present, Aakash Goel
- * MIT Licensed
  *
  * This is where Message graphQL schema is defined
  *

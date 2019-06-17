@@ -1,12 +1,27 @@
+/**
+ * logger.js
+ *
+ * Logger middleware, you can customize it to make messages more personal
+ *
+ */
+
 /* eslint-disable no-console */
 
+/**
+ * Module dependencies.
+ */
 const chalk = require('chalk');
 const ip = require('ip');
 
+/**
+ * Module variables.
+ * @private
+ */
 const divider = chalk.gray('\n-----------------------------------------------');
 
 /**
- * Logger middleware, you can customize it to make messages more personal
+ * Module variables.
+ * @public
  */
 const logger = {
   // Called whenever there's an error on the server we want to print
@@ -40,4 +55,8 @@ const logger = {
   },
 };
 
+/**
+ * Module exports.
+ * @public
+ */
 module.exports = logger;

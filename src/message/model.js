@@ -1,7 +1,5 @@
 /**
  * model.js
- * Copyright (c) 2019-present, Aakash Goel
- * MIT Licensed
  *
  * This is where mongoDB Message model is defined
  *

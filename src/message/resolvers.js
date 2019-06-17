@@ -1,7 +1,5 @@
 /**
  * resolvers.js
- * Copyright (c) 2019-present, Aakash Goel
- * MIT Licensed
  *
  * This is where all Message graphQL resolvers are defined
  *

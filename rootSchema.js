@@ -1,7 +1,5 @@
 /**
  * rootSchema.js
- * Copyright (c) 2019-present, Aakash Goel
- * MIT Licensed
  *
  * This is the main file where all the schemas will be imported and combined into one schema i.e. rootSchema which will then export
  *

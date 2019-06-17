@@ -1,7 +1,5 @@
 /**
  * server.js
- * Copyright (c) 2019-present, Aakash Goel
- * MIT Licensed
  *
  * This is the main file where server starts up
  *

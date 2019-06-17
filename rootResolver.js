@@ -1,7 +1,5 @@
 /**
  * rootResolver.js
- * Copyright (c) 2019-present, Aakash Goel
- * MIT Licensed
  *
  * This is the main file where all the resolvers will be imported and combined into one resolver i.e. rootResolver which will then export
  *
